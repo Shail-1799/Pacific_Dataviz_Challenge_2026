@@ -1,0 +1,24 @@
+- [x] Create a clean ZIP archive of the complete interactive project source.
+- [x] Verify the archive lists and extracts correctly.
+- [x] Deliver the source archive to the user.
+- [x] Create a standalone Dash/Plotly application with the validated climate-justice data.
+- [x] Run and verify the Dash app’s core interactive callbacks.
+- [x] Package the verified Dash source and operating instructions.
+- [x] Score the current work against the official Challenge categories and judging criteria.
+- [x] Select and validate a higher-distinction narrative supported by stronger official data coverage.
+- [x] Rebuild the chosen entry and produce a final competition-ready package.
+- [x] Add an accessible introductory Signal Room narrative sequence.
+- [x] Add a scientifically accurate interactive guide for reading the selected signal.
+- [x] Add high-resolution export for a selected country signal trace.
+- [x] Add and validate evidence-first visual refinements that improve competition readiness.
+- [x] Add configurable author, affiliation, place, and contact placeholders.
+- [x] Persist the narrative opening so it plays only once per browser by default.
+- [x] Add full-dashboard high-resolution PDF export.
+- [x] Add a side-by-side two-country trace comparison mode.
+- [x] Document the reusable Pacific dataviz workflow and self-hosting process.
+- [x] Build, validate, and package the complete self-hosting source archive.
+- [x] Add accessible exact-value point inspection to primary and comparison traces.
+- [x] Add restrained transitions for comparison and selected-country changes.
+- [x] Add native share controls with a trustworthy fallback for unsupported browsers.
+- [x] Add a methodology and data-sources overlay tailored to judges.
+- [x] Deliver changed code files or a complete deployable ZIP after every finished update.
