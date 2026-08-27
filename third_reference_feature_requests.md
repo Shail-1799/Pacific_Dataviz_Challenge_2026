@@ -18,3 +18,13 @@ Comparison motion will animate opacity and transform only, honor `prefers-reduce
 | --- | --- | --- |
 | `1997–98 El Niño context` and `2015–16 El Niño context` | WMO’s February 2016 ENSO update states that the 2015–16 El Niño was one of the strongest on record and comparable with 1997–98 and 1982–83. The app does not claim a local impact from this global context. | https://wmo.int/files/el-ninola-nina-update-february-2016 |
 | `Global ocean-heat context` | WMO’s January 2025 assessment confirms 2024 as the warmest year on record and reports exceptional land and sea-surface temperatures and ocean heat. The app labels this as global context only. | https://wmo.int/news/media-centre/wmo-confirms-2024-warmest-year-record-about-155degc-above-pre-industrial-level |
+
+## Fourth reference request — verified from ordered screenshot crops
+
+The supplied 983 × 240 screenshot was read in two overlapping horizontal crops. It requests three additional enhancements:
+
+1. A comprehensive mobile-device QA pass, including small-screen interactive elements and overlays.
+2. An export that downloads the current visualization state as a high-resolution image or PDF.
+3. Interactive explanations of specific WMO context terms in the methodology overlay when hovered.
+
+The export requirement is additive to the existing trace PNG and dashboard PDF. The new current-state export will preserve the active country or territory, indicator, available coverage, official source, and caveat so it is evidence-led rather than an unexplained graphic. WMO explanations will remain global-context definitions and will not imply a local event attribution.

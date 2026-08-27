@@ -1,5 +1,7 @@
 # Data validation — Smallest Emitters, Biggest Losers
 
+> **Historical prototype record — superseded for submission and deployment.** This document describes the retired Dash concept and its archived OWID/EM-DAT inputs. The active Signal Room uses `SPC:DF_CLIMATE_CHANGE(1.0)` as its primary dataset and official Pacific Data Hub `SPC:DF_SDG_11(4.4)` direct-loss/directly-affected extracts for its bounded consequence chapter. Use `official_disaster_loss_audit.md` and `signal_room_submission_copy.md` instead.
+
 ## Decision
 
 The interactive will lead with a **three-variable evidence view**: annual per-capita greenhouse-gas emissions on the horizontal axis, reported direct economic damage as a percentage of GDP on the vertical axis, and people affected per 1,000 residents as the bubble size. A user-facing axis switch will offer **share of global GHG emissions** as a second emissions view; this is the stronger measurement for the headline “smallest emitters,” while per-capita emissions remains available exactly as requested.

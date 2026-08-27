@@ -22,3 +22,65 @@
 - [x] Add native share controls with a trustworthy fallback for unsupported browsers.
 - [x] Add a methodology and data-sources overlay tailored to judges.
 - [x] Deliver changed code files or a complete deployable ZIP after every finished update.
+- [x] Complete a mobile-device QA pass and refine small-screen overlays, controls, and trace inspection.
+- [x] Add a dedicated high-resolution export of the current visualization state as image or PDF.
+- [x] Add accessible explanatory tooltips for WMO context terms in the methodology overlay.
+- [x] Replace attribution placeholders with a source-credit panel containing actual dataset and WMO source links.
+- [x] Add an in-progress indicator and completion message for the high-resolution State PNG export.
+- [x] Add a quick copy-link action to each WMO context-term explanation.
+- [x] Add targeted evidence-first refinements that strengthen judge-facing interpretability without overstating the data.
+- [x] Audit the supplied enhanced archive and reference images for reusable source data, code, and bounded consequence evidence.
+- [x] Audit PCRAFI, NOAA Coral Reef Watch, and NASA/Copernicus material for reproducible, evidence-safe integration.
+- [x] Add a bounded climate-consequence section that exposes disaster coverage and missingness without creating an unsupported regional ranking.
+- [x] Add ecology and independent satellite sea-level context with explicit source and interpretation boundaries.
+- [x] Add a geographic-reference toggle alongside the schematic signal field.
+- [x] Add a wall-of-signals view for comparable SST record inspection across places.
+- [x] Add a full-data CSV download and transparent source manifest.
+- [x] Add a complete English/French interface toggle, including exports and source/method labels.
+- [x] Reconcile all submission and self-host documentation with the Signal Room and consequence evidence story.
+- [x] Package and validate the expanded final deployable ZIP.
+- [x] Add a smooth, reduced-motion-aware loading sequence for the Wall of Signals view.
+- [x] Add a dedicated non-posting share control for the climate-justice consequence section.
+- [x] Add accessible exact-value hover and keyboard-focus tooltips to every Wall of Signals SST trace.
+- [x] Add a downloadable high-resolution image export for the selected climate-justice consequence chart.
+- [x] Add a brief first-time tutorial overlay for the map and signal toggles.
+- [x] Audit the full Pacific Data Hub 2026 climate-change dataset menu and supporting public sources for evidence-safe additions.
+- [x] Add only the strongest defensible official-data extension and reconcile the app narrative, methods, and submission copy.
+- [x] Fix low-contrast tooltip and similar dark-on-dark text across the application against accessible contrast targets.
+- [x] Optimise Wall of Signals layout and chart-image export behavior at phone-sized viewports.
+- [x] Retrieve, validate, and integrate official Pacific Data Hub direct-disaster-economic-loss data as the bounded consequence series where coverage permits.
+- [x] Add only targeted evidence-led narratives, visuals, sharing, and interaction refinements that strengthen the challenge entry without implying unsupported causality or regional ranking.
+- [x] Clarify in-app and final documentation that the primary official dataset is Pacific Data Hub `DF_CLIMATE_CHANGE` and identify every embedded official indicator.
+- [x] Add evidence-safe annotation callouts with leader arrows to clarify selected values and prevent visual label collisions.
+- [x] Expand judge-ready evidence exports with a focused CSV/PDF workflow and clear source, date, and caveat metadata.
+- [x] Add an accessible light/dark Signal Room appearance control with stored user preference and robust contrast.
+- [x] Add polished, reduced-motion-aware loading feedback for the official SDG 11 consequence record and its visual modules.
+- [x] Refine selected visual hierarchy and interaction cues for a more inviting, non-dashboard reading experience without adding unsupported claims.
+- [x] Correct all low-contrast values and labels in Signal Room night-reading surfaces, beginning with the Wall of Signals.
+- [x] Add a guided, keyboard-accessible 60-second judge walkthrough that advances through the strongest existing annotations and evidence controls.
+- [x] Add a smooth reduced-motion-aware Day/Night appearance transition that preserves all data encodings.
+- [x] Audit candidate official Pacific Data Hub datasets and choose a separate, evidence-safe concept for a genuinely distinct team-entry interactive.
+- [x] Build and validate the separate team-entry application with its own narrative, design system, data transform, source documentation, exports, and guided tour.
+- [ ] Deliver fresh independent-hosting ZIP archives for both the revised Signal Room and the new team-entry interactive.
+- [x] Reconfirm the Pacific Dataviz Challenge judging priorities against the latest official rules and assess the existing Signal Room objectively.
+- [x] Define a prioritized, evidence-safe set of at least ten Signal Room enhancements spanning story, originality, trust, accessibility, and judge experience.
+- [x] Translate the assessment into a practical implementation sequence that protects the central official-data question rather than adding generic dashboard features.
+- [x] Add a deterministic Signal Brief and three-question entry choice without cherry-picking a record.
+- [x] Build an evidence-safe selected-place consequence bridge using only overlapping official records and an explicit non-causal connector.
+- [x] Add a live-state Evidence Passport with source, unit, coverage, caveat, and URL-fragment details.
+- [x] Add an availability-only coverage curtain for the existing official record families, leaving every data gap blank.
+- [x] Upgrade the 60-second judge route to one fact per stop with elapsed time and a limitation-aware close.
+- [x] Add a synchronised all-place Wall year lens that reports supplied-record availability, not a regional aggregate claim.
+- [x] Add a spatial-unit atlas key that distinguishes EEZ-scale, station/network, and reporting-record geographies.
+- [x] Add a temporary personal annotation board with exact-value pins and source-labelled visual export.
+- [x] Add citation-safe Field Note postcard export layouts without social claims that exceed the data.
+- [x] Add a visible source-to-mark pipeline animation based on the documented transformation steps.
+- [x] Complete the French, screen-reader, focus-management, skip-link, and contrast finishing pass.
+- [x] Verify the official rainfall-anomaly extract and add it only if coverage, units, and scope remain clear.
+- [x] Verify the official Landsat coastline resource and add it only with a distinct-method/context boundary.
+- [x] Add a permission-only community-material placeholder without fabricating a quote, story, audio, or attribution.
+- [ ] Validate, document, checkpoint, and package the full roadmap update as a self-host source archive.
+- [x] Eliminate the duplicate React key warning for repeated supplied annual records and confirm the rendered record lists remain complete.
+- [x] Make Wall tooltips consistently render above the active pointer without being clipped, covered, or used as a wide hover surface.
+- [x] Remove the oversized vermilion hero arc and reduce decorative background prominence without weakening text contrast.
+- [ ] Package and verify the Signal Room source archive for the current Wall-tooltip and hero-background checkpoint.

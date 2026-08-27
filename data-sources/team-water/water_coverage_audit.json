@@ -1,0 +1,188 @@
+{
+  "source": "/home/ubuntu/pacific-climate-justice-viz/data-sources/team-water/pdh_sdg06_safely_managed_drinking_water.csv",
+  "recordCount": 932,
+  "overallRecordCount": 430,
+  "placeCount": 19,
+  "yearRange": [
+    2000,
+    2022
+  ],
+  "urbanizationCodes": [
+    "R",
+    "U",
+    "_T"
+  ],
+  "summary": [
+    {
+      "geo": "PG",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 31.75,
+      "latestYear": 2022,
+      "latestValue": 50.24,
+      "change": 18.49
+    },
+    {
+      "geo": "SB",
+      "observations": 22,
+      "firstYear": 2000,
+      "firstValue": 78.68,
+      "latestYear": 2021,
+      "latestValue": 67.45,
+      "change": -11.23
+    },
+    {
+      "geo": "WF",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 69.15,
+      "latestYear": 2022,
+      "latestValue": 68.88,
+      "change": -0.27
+    },
+    {
+      "geo": "KI",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 60.89,
+      "latestYear": 2022,
+      "latestValue": 75.69,
+      "change": 14.8
+    },
+    {
+      "geo": "PF",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 92.03,
+      "latestYear": 2022,
+      "latestValue": 81.81,
+      "change": -10.22
+    },
+    {
+      "geo": "MH",
+      "observations": 22,
+      "firstYear": 2001,
+      "firstValue": 88.85,
+      "latestYear": 2022,
+      "latestValue": 85.06,
+      "change": -3.79
+    },
+    {
+      "geo": "AS",
+      "observations": 22,
+      "firstYear": 2000,
+      "firstValue": 80.58,
+      "latestYear": 2021,
+      "latestValue": 89.85,
+      "change": 9.27
+    },
+    {
+      "geo": "FM",
+      "observations": 21,
+      "firstYear": 2000,
+      "firstValue": 91.09,
+      "latestYear": 2020,
+      "latestValue": 90.11,
+      "change": -0.98
+    },
+    {
+      "geo": "MP",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 82.03,
+      "latestYear": 2022,
+      "latestValue": 90.64,
+      "change": 8.61
+    },
+    {
+      "geo": "VU",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 83.38,
+      "latestYear": 2022,
+      "latestValue": 91.34,
+      "change": 7.96
+    },
+    {
+      "geo": "FJ",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 94.82,
+      "latestYear": 2022,
+      "latestValue": 95.49,
+      "change": 0.67
+    },
+    {
+      "geo": "NC",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 87.04,
+      "latestYear": 2022,
+      "latestValue": 96.87,
+      "change": 9.83
+    },
+    {
+      "geo": "NU",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 99.24,
+      "latestYear": 2022,
+      "latestValue": 97.01,
+      "change": -2.23
+    },
+    {
+      "geo": "TO",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 98.14,
+      "latestYear": 2022,
+      "latestValue": 98.81,
+      "change": 0.67
+    },
+    {
+      "geo": "WS",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 87.06,
+      "latestYear": 2022,
+      "latestValue": 99.04,
+      "change": 11.98
+    },
+    {
+      "geo": "TV",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 98.81,
+      "latestYear": 2022,
+      "latestValue": 99.26,
+      "change": 0.45
+    },
+    {
+      "geo": "PW",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 99.36,
+      "latestYear": 2022,
+      "latestValue": 99.57,
+      "change": 0.21
+    },
+    {
+      "geo": "CK",
+      "observations": 23,
+      "firstYear": 2000,
+      "firstValue": 99.86,
+      "latestYear": 2022,
+      "latestValue": 99.97,
+      "change": 0.11
+    },
+    {
+      "geo": "NR",
+      "observations": 21,
+      "firstYear": 2000,
+      "firstValue": 98.08,
+      "latestYear": 2020,
+      "latestValue": 100,
+      "change": 1.92
+    }
+  ]
+}

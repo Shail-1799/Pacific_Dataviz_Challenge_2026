@@ -1,5 +1,7 @@
 # Pacific Dataviz Challenge 2026 — Interactive application copy
 
+> **Retired submission draft — do not submit or cite as the active entry.** This pre-Signal-Room narrative records a previous Dash prototype using supporting OWID/EM-DAT data. The current submission narrative is `signal_room_submission_copy.md`; its primary official dataset is `SPC:DF_CLIMATE_CHANGE(1.0)` and its bounded consequence evidence is official Pacific Data Hub `SPC:DF_SDG_11(4.4)`.
+
 ## Title
 
 **Smallest Emitters, Biggest Losers**

@@ -1,5 +1,6 @@
 /** Oceanic Ledger style reminder: a calm, public-interest evidence field with deep ocean ink, parchment, teal emissions, and coral harm. */
 /** Signal Room shell reminder: the interactive is a quiet scientific field journal, not a SaaS dashboard. */
+/** Appearance control reminder: the persistent reading-light toggle preserves Signal Room data colors and never changes evidence encoding. */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -30,7 +31,7 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider
         defaultTheme="light"
-        // switchable
+        switchable
       >
         <TooltipProvider>
           <Toaster />
