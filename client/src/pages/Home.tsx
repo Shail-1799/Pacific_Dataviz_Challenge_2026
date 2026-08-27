@@ -1,8 +1,6 @@
 /** Signal Room style reminder: oceanographic instrument narrative; official Pacific data is the subject, and visual restraint protects uncertainty. */
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
-import html2canvas from "html2canvas";
-import { jsPDF } from "jspdf";
 import {
   Activity,
   ArrowDown,
@@ -32,7 +30,7 @@ import {
 } from "lucide-react";
 import { signalRoom, type SignalCountry, type SignalPoint } from "@/data/signalRoomData";
 import { projectProfile } from "@/config/projectProfile";
-import { ConsequenceSection, EvidenceCompanions, EvidenceCsvDownload, FieldViewToggle, PacificReferenceField, SSTWallDotAnchored, type ExpansionLanguage } from "@/components/SignalExpansion";
+import { ConsequenceSection, EvidenceCompanions, EvidenceCsvDownload, FieldViewToggle, PacificReferenceField, SSTWallPointerLayer, type ExpansionLanguage } from "@/components/SignalExpansion";
 import { AnnotationStudio, CoastlineAndCommunity, ConsequenceBridge, CoverageCurtain, EvidencePassport, RainfallRegister, SignalBrief, SourceToMark, SpatialUnitKey, WallYearLens } from "@/components/SignalRoomReadiness";
 import { useTheme } from "@/contexts/ThemeContext";
 
@@ -43,7 +41,7 @@ type ClimateContext = { label: string; note: string; source: string; url: string
 type JudgeTourStep = { target: string; kicker: string; title: string; copy: string; frenchKicker: string; frenchTitle: string; frenchCopy: string };
 
 const room = signalRoom as unknown as Room;
-const ASSET_BASE = (import.meta.env.VITE_ASSET_BASE ?? "/manus-storage").replace(/\/$/, "");
+const ASSET_BASE = (import.meta.env.VITE_ASSET_BASE ?? "/assets").replace(/\/$/, "");
 const HERO_TEXTURE = `${ASSET_BASE}/signal-room-hero-texture_5b0b26ef.png`;
 const MARK = `${ASSET_BASE}/signal-room-mark_28d6673a.png`;
 const FIELD_FOIL = `${ASSET_BASE}/signal-room-field-foil_6caa5c14.png`;
@@ -517,6 +515,7 @@ export default function Home() {
     if (!traceRef.current) return;
     setExporting(true);
     try {
+      const { default: html2canvas } = await import("html2canvas");
       const canvas = await html2canvas(traceRef.current, { backgroundColor: "#072530", scale: 3, useCORS: true, logging: false });
       const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/png", 1));
       if (!blob) return;
@@ -551,6 +550,7 @@ export default function Home() {
     if (!traceRef.current) return;
     setTracePdfExporting(true);
     try {
+      const [{ default: html2canvas }, { jsPDF }] = await Promise.all([import("html2canvas"), import("jspdf")]);
       const canvas = await html2canvas(traceRef.current, { backgroundColor: "#072530", scale: 2.4, useCORS: true, logging: false, windowWidth: traceRef.current.scrollWidth });
       const image = canvas.toDataURL("image/png", 1);
       const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
@@ -569,6 +569,7 @@ export default function Home() {
     setStateExporting(true);
     setStateExportStatus("idle");
     try {
+      const { default: html2canvas } = await import("html2canvas");
       const canvas = await html2canvas(stateExportRef.current, { backgroundColor: "#061b26", scale: 2.5, useCORS: true, logging: false, windowWidth: stateExportRef.current.scrollWidth });
       const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/png", 1));
       if (!blob) throw new Error("PNG generation returned no data.");
@@ -620,6 +621,7 @@ export default function Home() {
     if (!dashboardRef.current) return;
     setDashboardExporting(true);
     try {
+      const [{ default: html2canvas }, { jsPDF }] = await Promise.all([import("html2canvas"), import("jspdf")]);
       const canvas = await html2canvas(dashboardRef.current, { backgroundColor: "#061b26", scale: 1.5, useCORS: true, logging: false, windowWidth: dashboardRef.current.scrollWidth });
       const image = canvas.toDataURL("image/png", 1);
       const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
@@ -708,7 +710,7 @@ export default function Home() {
           <div className="mx-auto max-w-[1440px] px-5 pb-6 sm:px-8 lg:px-12"><SpatialUnitKey language={language} /></div>
           <div className="mx-auto max-w-[1440px] px-5 pb-14 sm:px-8 lg:px-12 lg:pb-20"><CoverageCurtain countries={room.countries} selectedCode={selectedCode} language={language} /></div>
 
-          <div id="tour-wall"><SSTWallDotAnchored countries={room.countries} language={language} onInspect={(code) => { chooseCountry(code); chooseMetric("sst"); }} /></div>
+          <div id="tour-wall"><SSTWallPointerLayer countries={room.countries} language={language} onInspect={(code) => { chooseCountry(code); chooseMetric("sst"); }} /></div>
           <div className="mx-auto max-w-[1440px] px-5 pb-14 sm:px-8 lg:px-12"><WallYearLens countries={room.countries} selectedCode={selectedCode} onSelect={(code) => { chooseCountry(code); chooseMetric("sst"); }} language={language} /></div>
 
           <section className="field-journal-section border-y border-[#c8d9d4] bg-[#f9f7f0] py-14 lg:py-20"><div className="relative mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12"><div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr]"><div><p className="mono-label text-[#137d80]">02 · READ THE TRACE</p><h2 className="display-serif mt-3 max-w-md text-4xl leading-[.95] tracking-[-.025em] sm:text-5xl">Every reading has a history.</h2><p className="mt-5 max-w-md text-base leading-7 text-[#47636a]">The field tells you where to look. This trace tells you what the official record contains for the selected place, including the first and latest year available.</p><div className="mt-8 border-l-2 border-[#f2c46f] pl-4"><p className="mono-label text-[#997233]">A PROVISIONAL FINDING</p><p className="mt-2 text-sm leading-6 text-[#47636a]">{unchangedNetworks} of {stationCountries} places with a monitoring-network series show no net increase from their first to latest reported count. That does not prove decline in warning capacity; it is a prompt to inspect the record.</p></div></div>
